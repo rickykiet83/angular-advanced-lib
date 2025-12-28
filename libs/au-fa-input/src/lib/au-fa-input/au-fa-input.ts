@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { AfterContentInit, Component, ContentChild, HostBinding, Input } from '@angular/core';
 
+import { InputRefDirective } from '../common/input-ref';
 import { NgClass } from '@angular/common';
 
 @Component({
@@ -8,12 +9,23 @@ import { NgClass } from '@angular/common';
   templateUrl: './au-fa-input.html',
   styleUrl: './au-fa-input.scss',
 })
-export class AuFaInput {
+export class AuFaInput implements AfterContentInit {
   @Input({required: true})
   icon: string = '';
 
-  @Input()
-  placeHolder = '';
+  @ContentChild(InputRefDirective)
+  input: InputRefDirective | null = null;
+
+  ngAfterContentInit(): void {
+    if (!this.input) {
+      console.error('the au-fa-input needs an input inside its content');
+    }
+  }
+
+  @HostBinding('class.input-focus')
+  get isInputFocus() {
+    return this.input ? this.input.focus : false;
+  }
 
   get classes(): any {
     const cssClasses: { [key: string]: boolean } = {};
