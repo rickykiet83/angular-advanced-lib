@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { NgClass } from "../../../../../node_modules/@angular/common/types/_common_module-chunk";
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'lib-au-fa-input',
