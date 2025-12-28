@@ -12,6 +12,9 @@ export class AuFaInput {
   @Input({required: true})
   icon: string = '';
 
+  @Input()
+  placeHolder = '';
+
   get classes(): any {
     const cssClasses: { [key: string]: boolean } = {};
 
