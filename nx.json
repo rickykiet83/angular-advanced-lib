@@ -74,7 +74,8 @@
     },
     "@nx/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "vitest-analog"
+      "unitTestRunner": "vitest-analog",
+      "style": "scss"
     },
     "@nx/angular:component": {
       "style": "scss"
@@ -86,6 +87,11 @@
   "release": {
     "version": {
       "preVersionCommand": "npx nx run-many -t build"
+    }
+  },
+  "projects": {
+    "au-input": {
+      "tags": ["au-input-app"]
     }
   }
 }
