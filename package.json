@@ -5,9 +5,12 @@
   "scripts": {
     "start": "npx nx serve au-input",
     "build": "nx build au-input",
-    "test": "nx test au-input"
+    "test": "nx test au-input",
+    "build:au-fa-input": "nx build au-fa-input",
+    "pack:au-fa-input": "npm pack dist/libs/au-fa-input --pack-destination publish",
+    "publish:au-fa-input": "npm publish publish/kiet-au-fa-input-1.0.0.tgz --access public"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/cdk": "^21.0.5",
     "@angular/common": "~21.0.0",

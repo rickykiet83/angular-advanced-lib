@@ -1,5 +1,5 @@
 {
-  "name": "au-fa-input",
+  "name": "kiet-au-fa-input",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/au-fa-input/src",
   "prefix": "lib",
@@ -42,6 +42,13 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint"
+    }
+  },
+  "pack": {
+    "executor": "nx:run-commands",
+    "dependsOn": ["build"],
+    "options": {
+      "command": "npm pack dist/libs/au-fa-input --pack-destination publish"
     }
   }
 }
