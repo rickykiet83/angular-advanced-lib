@@ -10,7 +10,7 @@ import { NgClass } from '@angular/common';
   styleUrl: './au-fa-input.scss',
 })
 export class AuFaInput implements AfterContentInit {
-  @Input({required: true})
+  @Input({ required: true })
   icon: string = '';
 
   @ContentChild(InputRefDirective)

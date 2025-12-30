@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+
 import { AuFaInput } from './au-fa-input';
 
 describe('AuFaInput', () => {
