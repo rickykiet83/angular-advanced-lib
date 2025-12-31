@@ -21,7 +21,6 @@ describe('App', () => {
   beforeEach(() => {
 
     fixture = TestBed.createComponent(App);
-    component = fixture.debugElement.componentInstance;
     el = fixture.debugElement;
     emailField = el.query(By.css('#email-field'));
 

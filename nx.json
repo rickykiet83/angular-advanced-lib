@@ -12,7 +12,9 @@
       "!{projectRoot}/src/test-setup.[jt]s",
       "!{projectRoot}/test-setup.[jt]s"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/angular-advanced-lib.yml"
+    ]
   },
   "nxCloudId": "694f5cbd5c96f42eb8bbedeb",
   "targetDefaults": {

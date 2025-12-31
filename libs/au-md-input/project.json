@@ -1,7 +1,7 @@
 {
-  "name": "au-fa-input",
+  "name": "kiet-au-md-input",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/au-fa-input/src",
+  "sourceRoot": "libs/au-md-input/src",
   "prefix": "lib",
   "projectType": "library",
   "release": {
@@ -17,12 +17,12 @@
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/au-fa-input/ng-package.json",
-        "tsConfig": "libs/au-fa-input/tsconfig.lib.json"
+        "project": "libs/au-md-input/ng-package.json",
+        "tsConfig": "libs/au-md-input/tsconfig.lib.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/au-fa-input/tsconfig.lib.prod.json"
+          "tsConfig": "libs/au-md-input/tsconfig.lib.prod.json"
         },
         "development": {}
       },

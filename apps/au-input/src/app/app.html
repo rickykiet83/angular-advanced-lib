@@ -2,7 +2,7 @@
   <ul class="top-menu disable-link-styles">
     <li class="logo-small-container">
       <a class="v-center-block-parent">
-        <img class="v-center-block logo-small angular-university-logo"
+        <img class="v-center-block logo-small angular-university-logo" alt="angular-university-logo"
           src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png" data-pin-nopin="true">
 
       </a>
@@ -21,37 +21,37 @@
     <div class="form">
 
       <div class="form-row">
-        <label>Normal Input:</label>
-        <input class="normal-input" type="email" name="email" placeholder="E-mail" autocomplete="off">
+        <label for="normal-input">Normal Input:</label>
+        <input id="normal-input" class="normal-input" type="email" name="email" placeholder="E-mail" autocomplete="off">
       </div>
 
       <div class="form-row">
-        <label>Email:</label>
+        <label for="email-field">Email:</label>
 
         <lib-au-fa-input id="email-field" icon="envelope">
-          <input type="email" name="email" placeholder="Email" autocomplete="off" class="test-class">
+          <input auInputRef type="email" name="email" placeholder="Email" autocomplete="off" class="test-class">
         </lib-au-fa-input>
 
       </div>
 
       <div class="form-row">
-        <label>Password:</label>
+        <label for="password-field">Password:</label>
         <lib-au-fa-input id="password-field" icon="lock">
-          <input placeholder="Password" class="test-class">
+          <input auInputRef placeholder="Password" class="test-class">
         </lib-au-fa-input>
       </div>
 
       <div class="form-row stripe-field">
-        <label>Stripe:</label>
+        <label for="stripe-field">Stripe:</label>
         <lib-au-fa-input icon="cc-stripe">
-          <input placeholder="Stripe">
+          <input auInputRef placeholder="Stripe" id="stripe-field">
         </lib-au-fa-input>
       </div>
 
       <div class="form-row">
-        <label>Paypal:</label>
+        <label for="paypal-field">Paypal:</label>
         <lib-au-fa-input icon="paypal">
-          <input placeholder="Paypal">
+          <input auInputRef placeholder="Paypal" id="paypal-field">
         </lib-au-fa-input>
       </div>
 

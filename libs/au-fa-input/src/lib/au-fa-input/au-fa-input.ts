@@ -11,7 +11,7 @@ import { NgClass } from '@angular/common';
 })
 export class AuFaInput implements AfterContentInit {
   @Input({ required: true })
-  icon: string = '';
+  icon = '';
 
   @ContentChild(InputRefDirective)
   input: InputRefDirective | null = null;
@@ -27,7 +27,7 @@ export class AuFaInput implements AfterContentInit {
     return this.input ? this.input.focus : false;
   }
 
-  get classes(): any {
+  get classes(): object {
     const cssClasses: { [key: string]: boolean } = {};
 
     if (this.icon) {
