@@ -13,7 +13,7 @@ export default defineConfig(() => ({
   //   plugins: () => [ nxViteTsPaths() ],
   // },
   test: {
-    name: 'kiet-au-md-input',
+    name: 'au-md-input',
     watch: false,
     globals: true,
     environment: 'jsdom',

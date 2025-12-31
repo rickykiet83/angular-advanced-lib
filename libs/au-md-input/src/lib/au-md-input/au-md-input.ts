@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'input[auMdInputRef]',
   imports: [CommonModule],
-  templateUrl: './kiet-au-md-input.html',
-  styleUrl: './kiet-au-md-input.scss',
+  templateUrl: './au-md-input.html',
+  styleUrl: './au-md-input.scss',
 })
-export class KietAuMdInput {}
+export class AuMdInput {}

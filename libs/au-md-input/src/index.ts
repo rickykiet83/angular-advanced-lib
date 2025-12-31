@@ -1,1 +1,1 @@
-export * from './lib/kiet-au-md-input/kiet-au-md-input';
+export * from './lib/au-md-input/au-md-input';

@@ -1,5 +1,5 @@
 {
-  "name": "kiet-au-md-input",
+  "name": "au-md-input",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/au-md-input/src",
   "prefix": "lib",

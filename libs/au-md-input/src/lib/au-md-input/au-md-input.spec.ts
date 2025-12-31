@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { KietAuMdInput } from './kiet-au-md-input';
+import { AuMdInput } from './au-md-input';
 
-describe('KietAuMdInput', () => {
-  let component: KietAuMdInput;
-  let fixture: ComponentFixture<KietAuMdInput>;
+describe('AuMdInput', () => {
+  let component: AuMdInput;
+  let fixture: ComponentFixture<AuMdInput>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [KietAuMdInput],
+      imports: [AuMdInput],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(KietAuMdInput);
+    fixture = TestBed.createComponent(AuMdInput);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
