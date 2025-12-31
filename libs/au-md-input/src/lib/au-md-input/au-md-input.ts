@@ -1,5 +1,7 @@
+import { AfterContentInit, Component, ContentChild, HostBinding, Input } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { InputRefDirective } from '@lib-common';
 
 @Component({
   selector: 'lib-au-md-input',
@@ -7,6 +9,22 @@ import { Component } from '@angular/core';
   templateUrl: './au-md-input.html',
   styleUrl: './au-md-input.scss',
 })
-export class AuMdInput {
+export class AuMdInput implements AfterContentInit {
 
+  @Input()
+  icon = '';
+
+  @ContentChild(InputRefDirective)
+  input: InputRefDirective | null = null;
+
+  ngAfterContentInit() {
+    if (!this.input) {
+      console.error("the au-md-input needs an input inside its content");
+    }
+  }
+
+  @HostBinding('class.input-focus')
+  get isInputFocus() {
+    return this.input ? this.input.focus : false;
+  }
 }
