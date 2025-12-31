@@ -1,5 +1,5 @@
-import baseConfig from '../../eslint.config.mjs';
 import nx from '@nx/eslint-plugin';
+import baseConfig from '../../eslint.config.mjs';
 
 export default [
   ...baseConfig,
@@ -26,7 +26,7 @@ export default [
         'error',
         {
           type: 'attribute',
-          prefix: '',
+          prefix: 'lib',
           style: 'camelCase',
         },
       ],

@@ -1,9 +1,10 @@
-import { AuFaInput, InputRefDirective } from '@au-fa-input';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { App } from './app';
+import { AuFaInput } from '@au-fa-input';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { InputRefDirective } from '@lib-common';
 
 describe('App', () => {
 

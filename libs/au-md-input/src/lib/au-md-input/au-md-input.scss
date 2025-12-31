@@ -1,4 +1,5 @@
-@use "index" as *;
+@use './../common/common';
+@use './../common/default-theme';
 
 .md-icon {
     line-height: 24px;
