@@ -25,7 +25,10 @@
         "styles": [
           "apps/au-input/src/material-theme.scss",
           "apps/au-input/src/styles.css"
-        ]
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/common/src/styles"]
+        }
       },
       "configurations": {
         "production": {

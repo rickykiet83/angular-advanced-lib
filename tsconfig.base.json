@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@au-fa-input": ["libs/au-fa-input/src/index.ts"],
-      "@au-md-input": ["libs/au-md-input/src/index.ts"]
+      "@au-md-input": ["libs/au-md-input/src/index.ts"],
+      "@lib-common": ["libs/common/src/index.ts"],
+      "@lib-common/styles": ["libs/common/src/styles"]
     }
   },
   "exclude": ["node_modules", "tmp"]
