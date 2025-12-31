@@ -4,7 +4,7 @@ import { App } from './app';
 import { AuFaInput } from '@au-fa-input';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { InputRefDirective } from '@lib-common';
+import { InputRefDirective } from '@au-fa-input';
 
 describe('App', () => {
 

@@ -4,12 +4,15 @@
   "license": "MIT",
   "scripts": {
     "start": "npx nx serve au-input",
-    "build": "npx nx build au-input",
+    "build": "npx nx run-many --targets=lint,test,build",
     "test": "npx nx test au-input",
+    "graph": "npx nx graph",
     "build-all": "npx nx affected -t lint test build e2e",
     "build:au-fa-input": "npx nx build au-fa-input",
     "pack:au-fa-input": "npm pack dist/libs/au-fa-input --pack-destination publish",
-    "publish:au-fa-input": "npm publish publish/kiet-au-fa-input-1.0.0.tgz --access public"
+    "publish:au-fa-input": "npm publish ./publish/kz-au-fa-input-1.0.0.tgz --access public",
+    "pack:au-md-input": "npm pack ./dist/libs/au-md-input --pack-destination publish",
+    "publish:au-md-input": "npm publish ./publish/kz-au-md-input-1.0.0.tgz --access public"
   },
   "private": false,
   "dependencies": {

@@ -1,6 +1,6 @@
 import { AfterContentInit, Component, ContentChild, HostBinding, Input } from '@angular/core';
 
-import { InputRefDirective } from '@lib-common';
+import { InputRefDirective } from './../common/input-ref';
 import { NgClass } from '@angular/common';
 
 @Component({

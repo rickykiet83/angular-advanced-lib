@@ -1,7 +1,7 @@
 import { AfterContentInit, Component, ContentChild, HostBinding, Input } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { InputRefDirective } from '@lib-common';
+import { InputRefDirective } from './../common/input-ref';
 
 @Component({
   selector: 'lib-au-md-input',
