@@ -6,7 +6,8 @@
     "@angular/core": "^21.0.0",
     "vite": "^7.0.0",
     "@analogjs/vite-plugin-angular": "~2.1.2",
-    "@nx/vite": "22.3.3"
+    "@nx/vite": "22.3.3",
+    "@lib-common": "*"
   },
   "sideEffects": false
 }
